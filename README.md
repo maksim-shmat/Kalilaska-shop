@@ -1,6 +1,6 @@
 Check the <https://en.m.wikipedia.org/wike/README>
 Horizont line - tag <hr> or *** or ---
--------------&&-
+--------------
 Second emm block
 ***************
 
