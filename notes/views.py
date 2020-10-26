@@ -27,7 +27,7 @@ def post_list(request, tag_slug=None):
         # If page is out of range deliver last page of results
         posts = paginator.page(paginator.num_pages)
     return render(request,
-                  'notes/post/list.html',
+                  'notes_in/post/list.html',
                   {'page': page,
                    'posts': posts})
 
@@ -57,7 +57,7 @@ def post_detail(request, year, month, day, post):
                                  .order_by('-same_tags', '-publish')[:4]
 
     return render(request,
-                  'notes/post/detail.html',
+                  'notes_in/post/detail.html',
                   {'post': post,
                    'comments': comments,
                    'new_comment': new_comment,
@@ -69,7 +69,7 @@ class PostListView(ListView):
     queryset = Post.published.all()
     context_object_name = 'posts'
     paginate_by = 3
-    template_name = 'notes/post/list.html'
+    template_name = 'notes_in/post/list.html'
 
 def post_share(request, post_id):
     # Retrive post by id
@@ -88,6 +88,6 @@ def post_share(request, post_id):
             sent = True
     else:
         form = EmailPostForm()
-        return render(request, 'notes/post/share.html', {'post': post,
+        return render(request, 'notes_in/post/share.html', {'post': post,
                                                          'form': form,
                                                          'sent': sent})
