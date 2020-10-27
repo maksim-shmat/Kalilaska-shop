@@ -9,19 +9,7 @@
   <p class="date"> 
     Published {{ post.publish }} by {{ post.author }} 
   </p> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   {{ post.body|markdown }}
-=======
-  {{ post.body|markdown }}
->>>>>>> 4479010... Add markdown and test post with it
-=======
-  {{ post.body|markdown }}
->>>>>>> 4479010... Add markdown and test post with it
-=======
-  {{ post.body|markdown }} 
->>>>>>> 4479010... Add markdown and test post with it
   <p>
     <a href="{% url "notes:post_share" post.id %}">
       Share this post
