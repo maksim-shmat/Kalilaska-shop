@@ -40,6 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'notes.apps.NotesConfig',
     'taggit',
+<<<<<<< HEAD
+
+=======
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+>>>>>>> bc11370ae1532ab0bdddebf31895fc9762f94731
 ]
 
 MIDDLEWARE = [
