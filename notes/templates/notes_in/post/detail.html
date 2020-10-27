@@ -8,7 +8,6 @@
   <p class="date"> 
     Published {{ post.publish }} by {{ post.author }} 
   </p> 
-  {{ post.body|linebreaks }} 
   <p>
     <a href="{% url "notes:post_share" post.id %}">
       Share this post
