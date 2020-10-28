@@ -6,6 +6,8 @@ from django.db.models import Count
 from taggit.models import Tag
 from .models import Post, Comment 
 from .forms import EmailPostForm, CommentForm
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity
+from .forms import EmailPostForm, CommentForm, SearchForm
 from django.http import HttpResponse
 
 def post_list(request, tag_slug=None):
@@ -29,7 +31,8 @@ def post_list(request, tag_slug=None):
     return render(request,
                   'notes_in/post/list.html',
                   {'page': page,
-                   'posts': posts})
+                   'posts': posts,
+                   'tag': tag})
 
 
 def post_detail(request, year, month, day, post):
@@ -91,3 +94,17 @@ def post_share(request, post_id):
         return render(request, 'notes_in/post/share.html', {'post': post,
                                                          'form': form,
                                                          'sent': sent})
+
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+    if form.is_valid():
+        query = form.cleaned_data['query']
+        results = Post.objects.annotate(search=SearchVector('title', 'body')).filter(search=query)
+    return render(request, 'notes_in/post/search.html', {'form': form,
+                                                          'query': query,
+                                                          'results':results})
