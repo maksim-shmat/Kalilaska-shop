@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'django.contrib.postgres',
     'notes.apps.NotesConfig',
     'taggit',
 ]
@@ -128,7 +129,7 @@ STATIC_URL = '/static/'
 
 
 EMAIL_HOST = 'smtp.mail.com'
-EMAIL_HOST_USER = 'shm@worker.com'
-EMAIL_HOST_PASSWORD = 'Antananarivu1980'
+EMAIL_HOST_USER = 's@rk.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
