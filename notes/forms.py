@@ -1,8 +1,11 @@
+""" Docs. """
+
 from django import forms
 from .models import Comment
 
 
 class EmailPostForm(forms.Form):
+    """ docs. """
     name = forms.CharField(max_length=25)
     email = forms.EmailField()
     to = forms.EmailField()
@@ -11,10 +14,12 @@ class EmailPostForm(forms.Form):
 
 
 class CommentForm(forms.ModelForm):
+    """ docs. """
     class Meta:
         model = Comment
         fields = ('name', 'email', 'body')
 
 
 class SearchForm(forms.Form):
+    """ docs. """
     query = forms.CharField()
