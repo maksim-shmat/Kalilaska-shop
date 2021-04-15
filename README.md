@@ -80,5 +80,5 @@ fontawessome.css| broken my schedule
 italic
 _zuzu_opusu_ _sheikh_ _vasvas__scorage_
 
-![screenshot of sample](http://websiske.hk.het/images/Heydoun_min.jpg)
+![screenshot of sample](https://observer.com/wp-content/uploads/sites/2/2021/04/GettyImages-1130349147.jpg?resize=768,512)
 
