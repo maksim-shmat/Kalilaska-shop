@@ -80,5 +80,5 @@ fontawessome.css| broken my schedule
 italic
 _zuzu_opusu_ _sheikh_ _vasvas__scorage_
 
-![screenshot of sample](https://observer.com/wp-content/uploads/sites/2/2021/04/GettyImages-1130349147.jpg?resize=768,512)
+![screenshot of sample](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamesradar.com%2Fthe-witcher-netflix-series-ciri-lauren-s-hissrich-interview%2F&psig=AOvVaw2kTw7hCz6uZsioPFbegbNn&ust=1618590161274000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCx1sLUgPACFQAAAAAdAAAAABAD)
 
